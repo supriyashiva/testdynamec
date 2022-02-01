@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Container from '@material-ui/core/Container'
-import { Grid, makeStyles } from '@material-ui/core'
+import { Box, Grid, makeStyles, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, withStyles } from '@material-ui/core'
 import Button from '@material-ui/core/Button'
 import { useHistory } from 'react-router-dom'
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
@@ -8,6 +8,72 @@ import DeviceCard from '../components/DeviceCard';
 import db from '../firebase';
 import { DataGrid } from "@material-ui/data-grid";
 import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import EditIcon from '@material-ui/icons/Edit';
+
+const StyledTableCell = withStyles((theme) => ({
+    head: {
+      backgroundColor:'#607d8b' ,
+      color: theme.palette.common.white,
+      
+    },
+    body: {
+      fontSize: 14,
+    },
+  }))(TableCell);
+  
+  const StyledTableRow = withStyles((theme) => ({
+    root: {
+      '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+      },
+    },
+  }))(TableRow);
+  
+  function createData(view ,imei, entity, deviceid, devicename, client) {
+    return { view,imei, entity,deviceid, devicename,client };
+  }
+  
+  const rows = [
+    createData('555',111, 6.0,99, 'Dynamec', 6.0,),
+    createData('7788', 222, 9.0, 37, 'wired',33),
+    createData('Edit',333, 262, 16.0, 'roller', 6.0,),
+    createData('Edit',444, 262, 16.0, 'motor', 6.0,),
+    createData('Edit',555, 305, 3.7, 'driller', 4.3),
+    createData('Edit',666, 356, 16.0, 'pipes', 3.9),
+    
+  ];
+  
+  const useStyles = makeStyles({
+    table: {
+      minWidth: 900,
+      
+      
+    },
+    paper:{
+      textAlign:"center",
+      width:"100%",
+      padding:"10px",
+      backgroundColor:"gray",
+    
+    },
+    tm:{
+      marginTop:30 
+    },
+    rootcol: {
+                "& .header-name": {
+                    backgroundColor: '#8860CD',
+                     fontSize: 17,
+                     fontFamily: 'Poppins Regular',
+                     fontStyle: 'bold',
+                }
+                    
+                    
+                },
+  });
+  
+
+
 
 
 const data = [
@@ -52,22 +118,15 @@ const columns = [
         width: 190,
         headerClassName: 'header-name',
     },
+    {
+    field:"view",
+    headerName:"View",
+    width:120,
+    
+    headerClassName:'header-name',
+    },
 ];
 
-const useStyles = makeStyles({
-    rootcol: {
-        "& .header-name": {
-            backgroundColor: '#8860CD',
-            fontSize: 17,
-            fontFamily: 'Poppins Regular',
-            fontStyle: 'bold',
-
-        },
-    },
-    tm: {
-        marginTop: 30
-    },
-});
 
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
@@ -156,11 +215,61 @@ function Devices() {
                     <div className={classes.tm} >
                         <h1></h1>
                     </div>
-
+{/* <div> */}
                     <Grid item xs={10} className={classes.rootcol} >
+                      
+                    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
+        <TableHead >
+          
+         <TableRow >
+            
+          <StyledTableCell >View</StyledTableCell>
+            <StyledTableCell>IMEI </StyledTableCell>
+            <StyledTableCell >Entity</StyledTableCell>
+            <StyledTableCell >Device ID</StyledTableCell>
+            <StyledTableCell >Device Name</StyledTableCell>
+            <StyledTableCell >Client</StyledTableCell>
+            <StyledTableCell >Edit</StyledTableCell>
+            
+          </TableRow>
+        </TableHead>
+        <TableBody >
+          {rows.map((row) => (
+            <StyledTableRow key={row.view} >
+              <StyledTableCell component="th" scope="row">
+               <Box display="flex">
+                        {/* <Box>
+                        {row.view}
+                        </Box> */}
+                        <Button onClick={()=>history.push('/devicedetail')}  >
+                        <VisibilityIcon/>
+                        </Button>
+               </Box>
+              </StyledTableCell>
+              <StyledTableCell >{row.imei}</StyledTableCell>
+              <StyledTableCell >{row.entity}</StyledTableCell>
+              <StyledTableCell>{row.deviceid}</StyledTableCell>
+              <StyledTableCell >{row.devicename}</StyledTableCell>
+              <StyledTableCell >{row.client}</StyledTableCell>
+              <StyledTableCell >
+              <Box display="flex">
+                 <Box>
+                   <EditIcon/>
+                 </Box>
+              </Box>
+              </StyledTableCell>
+              
+              
+            </StyledTableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
 
-                        <DataGrid width={100} rows={info} columns={columns} pageSize={5} />
+ 
                     </Grid>
+                    {/* </div> */}
                     <Grid item xs={2} >
 
                         <PieChart width={200} height={400}>

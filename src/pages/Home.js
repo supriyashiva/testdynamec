@@ -10,6 +10,9 @@ import CreateEntityForm from './CreateEntityForm';
 import CreateDeviceForm from './CreateDeviceForm';
 import CreateUserForm from './CreateUserForm';
 import Layout from '../components/Layout';
+import Devicedetail from '../components/Devicedetail';
+import Cardtab from '../components/Cardtab';
+import Cardtabdisp from '../components/Cardtabdisp';
 
 function Home() {
 
@@ -41,6 +44,12 @@ function Home() {
                     </Route>
                     <Route path="/CreateEntityForm">
                         < CreateEntityForm />
+                    </Route>
+                    <Route path="/devicedetail">
+                        < Devicedetail />
+                    </Route>
+                    <Route path="/cardtabdisp">
+                        <Cardtabdisp />
                     </Route>
                 </Switch>
             </Layout>

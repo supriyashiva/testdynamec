@@ -7,7 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import { Box,Grid,Divider} from '@material-ui/core';
-import './featuredInfo.css';
 
 {/*const useStyles = makeStyles({
   root: {
@@ -51,9 +50,9 @@ export default function FeaturedInfo() {
   
   return (
     <Grid container spacing={1}>
-      <Grid item xs={6} sm={3} lg={3}>
-      <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD",display:"flex"}} >
-      <Box bgcolor="orange" color="white"  >
+      <Grid item xs={6} sm={3} lg={3} >
+      <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD"}} >
+      <Box bgcolor="orange" color="white" >
       <CardContent style={{ display: "flex",flexDirection:"column", justifyContent: "center", alignItems: "center"  }}>
           <Typography style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
             Running Hours  
@@ -64,7 +63,7 @@ export default function FeaturedInfo() {
               </Typography>
               <ArrowDownward style={{color:"red",marginLeft:"30px"}}/>
           </Box>
-          <Typography >
+          <Typography  >
               Compared to last month
           </Typography>
           </CardContent>
@@ -73,8 +72,8 @@ export default function FeaturedInfo() {
           </Box>
     
    </Grid>
-   <Grid item xs={6} sm={3} lg={3}>
-   <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD",display:"flex"}} >
+   <Grid item xs={6} sm={3} lg={3} >
+   <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD"}} >
       <Box bgcolor="dodgerblue" color="white">
       <CardContent style={{ display: "flex",flexDirection:"column", justifyContent: "center", alignItems: "center"  }}>
           <Typography style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
@@ -96,7 +95,7 @@ export default function FeaturedInfo() {
    </Grid>
 
    <Grid item xs={6} sm={3} lg={3}>
-   <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD",display:"flex"}} >
+   <Box ml={1} mt={2}  style={{width:"220px",boxShadow:"5px 20px 20px 5px #8860CD"}} >
       <Box bgcolor="orange" color="white">
       <CardContent style={{ display: "flex",flexDirection:"column", justifyContent: "center", alignItems: "center"  }}>
           <Typography style={{display:"flex",justifyContent:"center",alignItems:"center"}}>

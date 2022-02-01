@@ -56,7 +56,10 @@ const data = [
         pv: 4300,
         amt: 2100,
     },
+
 ];
+
+
 
 function Dashboard1() {
 
@@ -70,7 +73,7 @@ function Dashboard1() {
 
     return (
         <div className="home">
-            <div className="firstline">
+            <div>
                 <FeaturedInfo details={details} />
             </div>
             <div className="secondline">
