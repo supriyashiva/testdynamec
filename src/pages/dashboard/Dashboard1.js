@@ -1,12 +1,13 @@
 import { Grid, Paper } from '@material-ui/core';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import Chart from "../../components/chart/Chart";
-import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
+//import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import "./Dashboard1.css";
 import { userData } from "../../dummyData";
 import WidgetSm from "../../components/widgetSm/WidgetSm";
 import WidgetLg from "../../components/widgetLg/WidgetLg";
 import React, { useEffect, useState } from 'react'
+import Cardtabdisp from '../../components/Cardtabdisp';
 
 const details = {
     energyGenerated: 112234,
@@ -74,9 +75,10 @@ function Dashboard1() {
     return (
         <div className="home">
             <div>
-                <FeaturedInfo details={details} />
+                {/* <FeaturedInfo details={details} /> */}
+                <Cardtabdisp/>
             </div>
-            <div className="secondline">
+            {/* <div className="secondline">
                 <Grid container spacing={3}>
                     <Grid item xs={6} sm={8}>
                         <Paper>
@@ -134,7 +136,7 @@ function Dashboard1() {
             <div className="homeWidgets">
                 <WidgetSm />
                 <WidgetLg />
-            </div>
+            </div> */}
         </div>
     );
 }

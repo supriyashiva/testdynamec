@@ -23,22 +23,22 @@ function MyDrawer() {
             path: '/'
         },
         {
-            text: 'Devices',
+            text: 'Client Details',
             icon: <DevicesIcon color="secondary" />,
             path: '/devices'
         },
         {
-            text: 'Users',
+            text: 'Case files',
             icon: <PeopleIcon color="secondary" />,
             path: '/users'
         },
         {
-            text: 'Entity',
+            text: 'Day book',
             icon: <LabelImportantIcon color="secondary" />,
             path: '/entity'
         },
         {
-            text: 'Reports',
+            text: 'Payment',
             icon: <AssessmentIcon color="secondary" />,
             path: '/reports'
         },

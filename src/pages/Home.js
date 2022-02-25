@@ -13,6 +13,7 @@ import Layout from '../components/Layout';
 import Devicedetail from '../components/Devicedetail';
 import Cardtab from '../components/Cardtab';
 import Cardtabdisp from '../components/Cardtabdisp';
+import Signin1 from './singin/Signin1';
 
 function Home() {
 
@@ -23,7 +24,8 @@ function Home() {
                 <Switch>
                     <Route exact path="/">
                         <Dashboard1 />
-                    </Route>
+                    </Route> 
+                    
                     <Route path="/devices">
                         < Devices />
                     </Route>
