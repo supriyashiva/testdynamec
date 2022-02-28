@@ -15,7 +15,7 @@ function Signin1(){
                 <Typography style={{display:"flex",alignItems:"center"}}> Login Form</Typography>
                 </Grid>
                 <Grid item xs={12}>
-                <TextField 
+                <TextField  
                 
                 label="Enter your username"
                 />
@@ -28,13 +28,13 @@ function Signin1(){
                  </Grid>
                  <Grid item xs={12}>
 
-                 <Button style={{
+                 <button style={{
                      backgroundColor:"#33eb91",
                      borderRadius:"20px",
                      marginTop:"30px",
                     justifySelf:"center",
                     padding:"5px 50px",
-                     }} variant="contained" > Login</Button>
+                     }} variant="contained" > Login</button>
                      </Grid>
                      <Grid item xs={12}>
                          <Typography style={{fontSize:"15px",fontweight:"50px"}}>or sign in with :</Typography>

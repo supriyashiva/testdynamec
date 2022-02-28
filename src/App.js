@@ -1,4 +1,5 @@
 import Signin from "./pages/singin/Signin";
+
 import { useEffect, useState } from 'react';
 import Home from './pages/Home';
 import { auth } from './firebase';
@@ -23,7 +24,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {user ? <Home /> : <Signin />}
+      {user ? <Home /> : <Signin/>}
     </div>
   );
 }
