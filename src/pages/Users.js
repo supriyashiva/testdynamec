@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Container, Button, Grid, Paper, TextField, Box } from '@material-ui/core'
 
 
-export default function Entity(){
+export default function Users(){
     return(
         <Container>
            <form>
@@ -11,7 +11,8 @@ export default function Entity(){
                <Typography style={{alignSelf:"center",marginTop:"10px"}}>Court name</Typography>
                </Grid>
                <Grid item xs={6}>
-               <TextField 
+               <TextField
+               disabled={true} 
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -21,6 +22,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -29,7 +31,8 @@ export default function Entity(){
                <Typography style={{alignSelf:"center",justifyContent:"center",alignItems:"center" ,marginTop:"10px"}}> Court Hall#</Typography>
                </Grid>
                <Grid item xs={6}>
-               <TextField 
+               <TextField
+               disabled={true} 
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -40,6 +43,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -52,6 +56,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                
@@ -66,6 +71,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -75,6 +81,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>

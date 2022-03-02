@@ -1,10 +1,10 @@
 import React from 'react';
 import { Typography, Container, Button, Grid, Paper, TextField, Box, Select } from '@material-ui/core';
-import { useHistory } from 'react-router-dom'
 
 
-export default function Devices(){
-  const history = useHistory();
+
+export default function Submitform(){
+  
   return(
       
         <Container>
@@ -17,7 +17,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                
@@ -29,7 +29,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                
@@ -41,7 +41,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -51,13 +51,13 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
-                <Grid item xs={2}>
-                 <Button onClick={() => history.push('/submitform')} style={{marginLeft:"40px"}} variant="contained" color="primary">Add_Client</Button>
-               </Grid> 
+               {/* <Grid item xs={2}>
+                 <Button  style={{marginLeft:"40px"}} variant="contained" color="primary">Add_Client</Button>
+               </Grid> */}
 
                
 
@@ -66,13 +66,13 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
-                <Grid item xs={2}>
+               {/* <Grid item xs={2}>
                  <Button style={{marginLeft:"40px"}} variant="contained" color="primary">Edit_Client</Button>
-               </Grid>  
+               </Grid>  */}
 
 
 
@@ -81,7 +81,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField
-               disabled={true} 
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -94,7 +94,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                
@@ -109,7 +109,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                
@@ -122,7 +122,7 @@ export default function Devices(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
-               disabled={true}
+               
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                multiline 

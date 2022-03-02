@@ -57,7 +57,7 @@ function MyDrawer() {
         >
 
             <div>
-                <Typography variant="h5" className={classes.title}>Dynamec</Typography>
+                <Typography  variant="h6" className={classes.title}>Nyayvadi Notes</Typography>
             </div>
 
 

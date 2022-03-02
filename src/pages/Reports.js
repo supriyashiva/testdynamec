@@ -13,6 +13,7 @@ export default function Reports(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -23,6 +24,7 @@ export default function Reports(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -34,6 +36,7 @@ export default function Reports(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -46,6 +49,7 @@ export default function Reports(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                
@@ -60,6 +64,7 @@ export default function Reports(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>

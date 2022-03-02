@@ -13,6 +13,7 @@ import Layout from '../components/Layout';
 import Devicedetail from '../components/Devicedetail';
 import Cardtab from '../components/Cardtab';
 import Cardtabdisp from '../components/Cardtabdisp';
+import Submitform from './Submitform';
 
 function Home() {
 
@@ -37,6 +38,10 @@ function Home() {
                     <Route path="/reports">
                         < Reports />
                     </Route>
+                    <Route path="/submitform">
+                        <Submitform/>
+                    </Route>
+                    
                     <Route path="/cdf">
                         < CreateDeviceForm />
                     </Route>

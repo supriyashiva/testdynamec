@@ -12,6 +12,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -21,6 +22,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -29,7 +31,8 @@ export default function Entity(){
                <Typography style={{alignSelf:"center",justifyContent:"center",alignItems:"center" ,marginTop:"10px"}}> Court Hall#</Typography>
                </Grid>
                <Grid item xs={6}>
-               <TextField 
+               <TextField
+               disabled={true} 
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -43,6 +46,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>
@@ -55,6 +59,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"
                multiline
@@ -67,6 +72,7 @@ export default function Entity(){
                </Grid>
                <Grid item xs={6}>
                <TextField 
+               disabled={true}
                style={{width:"100%",marginTop:"10px"}}
                variant="outlined"/>
                </Grid>

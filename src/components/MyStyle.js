@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => {
         },
         title: {
             padding: theme.spacing(2)
+            
         },
 
         appbar: {
